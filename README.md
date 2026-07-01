@@ -1,10 +1,29 @@
-# frontend
+# 🛒 frontend
+
+사내 구매 요청/승인 프로세스를 지원하는 Next.js 기반 커머스 플랫폼입니다.
+상품 등록·조회부터 장바구니, 구매 요청, 예산 관리까지 조직 내 구매 흐름을 한 곳에서 처리합니다.
+
+![Next.js](https://img.shields.io/badge/Next.js-App_Router-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)
+
+**배포 링크:** [frontend042.vercel.app](https://frontend042.vercel.app/)
+
+## 목차
+
+- [팀원 구성](#팀원-구성)
+- [기술 스택](#기술-스택)
+- [시작하기](#시작하기)
+- [파일 구조](#파일-구조)
 
 ## 팀원 구성
+
 | 페이지 구분 | 인원 |
 |------|-----------|
 | 랜딩 · 로그인 · 회원가입 | 김민식 |
-| 상품리스트· 상품 상세 | 성재영 |
+| 상품리스트 · 상품 상세 | 성재영 |
 | 상품 등록 내역 | 주예송 |
 | 장바구니 | 황인아 · 김민식 |
 | 구매 요청 내역 | 이인창 |
@@ -23,9 +42,42 @@
 | 품질·도구 | **ESLint**, **Vitest** (테스트·Storybook 연동) |
 | 배포 | **Vercel** |
 
+자세한 도입 배경은 [`TECH_STACK.md`](./TECH_STACK.md)를 참고하세요.
+
+## 시작하기
+
+### 요구 사항
+
+- `Node.js 20+`
+- `npm`
+
+### 설치 및 실행
+
+```bash
+# 의존성 설치
+npm install
+
+# 개발 서버 실행
+npm run dev
+
+# 프로덕션 빌드 / 실행
+npm run build
+npm run start
+```
+
+브라우저에서 [http://localhost:3000](http://localhost:3000) 으로 접속합니다.
+
+### 그 외 스크립트
+
+```bash
+npm run lint              # 정적 검사
+npm run storybook         # Storybook 개발 서버 (http://localhost:6006)
+npm run build-storybook   # Storybook 정적 빌드
+```
+
 ## 파일 구조
 
-```
+```text
 frontend/
 ├── .cursor/                 # Cursor 규칙·설정
 │   └── rules/
@@ -88,6 +140,3 @@ frontend/
 ├── tsconfig.json
 └── vitest.config.ts
 ```
-
-## 구현 홈페이지
-  https://frontend042.vercel.app/
